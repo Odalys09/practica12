@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página personal de Odalys Rendón Peláez hecha con HTML semántico.">
+  <title>Sobre mí — Odalys Rendón Peláez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/estilos.css">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="../../js/tema.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+  <a class="volver" href="../../index.html#proyectos">← Volver al portafolio</a>
+  <main id="main" class="contenedor">
+    <header class="perfil">
+      <img src="../../img/foto.svg" alt="Retrato de Odalys Rendón Peláez" width="160" height="200">
+      <div>
+        <h1>Odalys Rendón Peláez</h1>
+        <p>Estudiante de computación y aprendiz de arquitectura en camino.</p>
+      </div>
+    </header>
+
+    <section aria-labelledby="t-quien">
+      <h2 id="t-quien">¿Quién soy?</h2>
+      <p>Estudio computación en el CECyT 3 del IPN. Dibujo artístico y técnico con mucha facilidad y quiero estudiar Arquitectura en la ESIA Tecamachalco.</p>
+    </section>
+
+    <section aria-labelledby="t-gustos">
+      <h2 id="t-gustos">Lo que me gusta</h2>
+      <ul class="lista">
+        <li>Dibujar a mano alzada y a escala.</li>
+        <li>Combinar diseño y código.</li>
+        <li>Los colores rosa, azul claro, amarillo y negro.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="t-hab">
+      <h2 id="t-hab">Mis habilidades</h2>
+      <table>
+        <caption>Habilidades y cómo van mis avances</caption>
+        <thead><tr><th scope="col">Habilidad</th><th scope="col">Tipo</th><th scope="col">Nivel</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Dibujo artístico</th><td>Diseño</td><td>Muy buena</td></tr>
+          <tr><th scope="row">Dibujo técnico</th><td>Diseño</td><td>Muy buena</td></tr>
+          <tr><th scope="row">HTML y CSS</th><td>Código</td><td>En aprendizaje</td></tr>
+          <tr><th scope="row">JavaScript</th><td>Código</td><td>En aprendizaje</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

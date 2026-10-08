@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rediseño de ejemplo de un estudio de arquitectura con Flexbox y Grid.">
+  <title>Estudio Trazo — Rediseño con Grid y Flexbox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/estilos.css">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="../../js/tema.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+  <a class="volver" href="../../index.html#proyectos">← Volver al portafolio</a>
+  <header class="estudio__cab">
+    <p class="estudio__logo">Estudio Trazo</p>
+    <nav aria-label="Estudio">
+      <ul class="estudio__nav">
+        <li><a href="#obras">Obras</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#cierre">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="estudio__hero">
+      <h1>Espacios pensados con la mano y la cabeza</h1>
+      <p>Sitio de ejemplo (ficticio) para practicar Flexbox en la cabecera y Grid en el contenido.</p>
+    </section>
+    <section id="obras" class="contenedor" aria-labelledby="t-obras">
+      <h2 id="t-obras">Obras</h2>
+      <div class="galeria">
+        <article class="obra obra--grande"><h3>Casa del patio</h3><p>Vivienda de dos niveles.</p></article>
+        <article class="obra"><h3>Biblioteca</h3><p>Lectura y luz.</p></article>
+        <article class="obra"><h3>Café del parque</h3><p>Terraza abierta.</p></article>
+        <article class="obra"><h3>Taller</h3><p>Espacio de trabajo.</p></article>
+        <article class="obra"><h3>Mercado</h3><p>Techo ligero.</p></article>
+      </div>
+    </section>
+    <section id="servicios" class="contenedor" aria-labelledby="t-serv">
+      <h2 id="t-serv">Servicios</h2>
+      <ul class="servicios">
+        <li>Planos y dibujo técnico</li>
+        <li>Maquetas</li>
+        <li>Diseño de interiores</li>
+      </ul>
+    </section>
+  </main>
+  <footer id="cierre" class="estudio__pie"><p>Estudio Trazo · proyecto de práctica de Odalys Rendón Peláez</p></footer>
+</body>
+</html>

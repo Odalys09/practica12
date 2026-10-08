@@ -1,0 +1,11 @@
+.nueva { display: grid; gap: var(--esp-1); margin: var(--esp-3) 0; }
+.nueva__fila { display: flex; gap: var(--esp-1); flex-wrap: wrap; }
+.nueva__fila input { flex: 1 1 14rem; }
+.tareas { display: grid; gap: var(--esp-1); margin-top: var(--esp-2); }
+.tarea { display: flex; align-items: center; gap: var(--esp-2); padding: var(--esp-1) var(--esp-2); border: 2px solid var(--color-borde); background: var(--color-superficie); }
+.tarea input[type="checkbox"] { width: 1.4rem; height: 1.4rem; accent-color: var(--color-primario); }
+.tarea label { flex: 1; font-weight: 400; cursor: pointer; }
+.tarea.hecha label { text-decoration: line-through; color: var(--color-suave); }
+.borrar { background: var(--color-acento); color: var(--color-sobre-relleno); border: 2px solid var(--color-borde); border-radius: var(--radio); padding: 0.4rem 0.8rem; cursor: pointer; font-weight: 600; }
+.borrar:hover { background: var(--color-relleno); }
+.vacio { margin-top: var(--esp-3); color: var(--color-suave); }

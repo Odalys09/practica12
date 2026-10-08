@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Odalys Rendón Peláez, estudiante de computación con talento en dibujo artístico y técnico.">
+  <meta property="og:title" content="Odalys Rendón — Computación y dibujo">
+  <meta property="og:description" content="Portafolio con HTML5, CSS3 y JavaScript.">
+  <meta property="og:image" content="img/og.png">
+  <title>Odalys Rendón — Computación y dibujo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <a href="#hero" class="logo">Odalys Rendón</a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+      <span class="menu-btn__barras" aria-hidden="true"></span>
+    </button>
+    <nav aria-label="Principal">
+      <ul class="nav__lista" id="menu">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <button class="tema-btn" id="dark-mode-toggle" aria-pressed="false" aria-label="Activar modo oscuro">
+      <span aria-hidden="true">◐</span>
+    </button>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="hero" class="seccion hero" aria-labelledby="hero-titulo">
+      <div class="hero__texto">
+        <p class="hero__saludo">Hola, soy</p>
+        <h1 id="hero-titulo">Odalys <em>Rendón Peláez</em></h1>
+        <p class="hero__frase">Estudio computación y dibujo con ojo de futura arquitecta: me gusta que lo que diseño se vea bien y funcione bien.</p>
+        <div class="hero__acciones">
+          <a class="btn btn--primario" href="#proyectos">Ver mis proyectos</a>
+          <a class="btn btn--secundario" href="#contacto">Contáctame</a>
+        </div>
+        <ul class="redes" aria-label="Redes profesionales">
+          <li><a href="https://github.com/tu-usuario" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/tu-linkedin" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:rendon.pelaez.odalys@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <!-- Para usar tu foto: guárdala como img/foto.jpg y cambia src="img/foto.svg" por src="img/foto.jpg" -->
+      <img class="hero__foto" src="img/fotoODA (2).jpeg" alt="Retrato de Odalys Rendón Peláez" width="256" height="320">
+    </section>
+
+    <section id="sobre-mi" class="seccion" aria-labelledby="sobre-titulo">
+      <h2 id="sobre-titulo"><span class="num">01</span> Sobre mí</h2>
+      <div class="texto-largo">
+        <p>Soy Odalys, estudiante de computación en el CECyT 3 del IPN. Estoy aprendiendo HTML, CSS y JavaScript para crear sitios claros y accesibles.</p>
+        <p>Dibujo artístico y técnico con mucha facilidad, y quiero estudiar Arquitectura en la ESIA Tecamachalco. Me interesa unir dos mundos: el diseño de espacios y el diseño de interfaces.</p>
+      </div>
+    </section>
+
+    <section id="proyectos" class="seccion" aria-labelledby="proy-titulo">
+      <h2 id="proy-titulo"><span class="num">02</span> Proyectos</h2>
+      <div class="grid-proyectos">
+        <article class="proyecto">
+          <img src="img/proyecto1.svg" alt="Vista de la página Sobre mí con foto, lista y tabla" loading="lazy" width="400" height="225">
+          <div class="proyecto__cuerpo">
+            <h3><a href="proyectos/sobre-mi/index.html">Página «Sobre mí»</a></h3>
+            <p>Página personal con HTML semántico, listas, tabla y estilos propios.</p>
+            <ul class="etiquetas" aria-label="Tecnologías usadas"><li>HTML</li><li>CSS</li></ul>
+            <p class="proyecto__links"><a href="proyectos/sobre-mi/index.html">Ver demo</a> <a href="https://github.com/tu-usuario/sobre-mi" rel="noopener">GitHub</a></p>
+          </div>
+        </article>
+        <article class="proyecto">
+          <img src="img/proyecto2.svg" alt="Vista del rediseño de un estudio de arquitectura con Grid y Flexbox" loading="lazy" width="400" height="225">
+          <div class="proyecto__cuerpo">
+            <h3><a href="proyectos/grid-flexbox/index.html">Rediseño con Grid y Flexbox</a></h3>
+            <p>Sitio de ejemplo de un estudio de arquitectura: Flexbox en la cabecera y Grid en el contenido, responsive.</p>
+            <ul class="etiquetas" aria-label="Tecnologías usadas"><li>CSS Grid</li><li>Flexbox</li></ul>
+            <p class="proyecto__links"><a href="proyectos/grid-flexbox/index.html">Ver demo</a> <a href="https://github.com/tu-usuario/grid-flexbox" rel="noopener">GitHub</a></p>
+          </div>
+        </article>
+        <article class="proyecto">
+          <img src="img/proyecto3.svg" alt="Vista de la lista de tareas con casillas marcadas" loading="lazy" width="400" height="225">
+          <div class="proyecto__cuerpo">
+            <h3><a href="proyectos/lista-tareas/index.html">Lista de tareas</a></h3>
+            <p>App para agregar, completar y borrar tareas; guarda los datos en el navegador.</p>
+            <ul class="etiquetas" aria-label="Tecnologías usadas"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <p class="proyecto__links"><a href="proyectos/lista-tareas/index.html">Ver demo</a> <a href="https://github.com/tu-usuario/lista-tareas" rel="noopener">GitHub</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="habilidades" class="seccion" aria-labelledby="hab-titulo">
+      <h2 id="hab-titulo"><span class="num">03</span> Habilidades</h2>
+      <div class="grid-habilidades">
+        <div><h3>Frontend</h3><ul class="etiquetas"><li>HTML5 semántico</li><li>CSS3 (Grid, Flexbox)</li><li>JavaScript ES6+</li></ul></div>
+        <div><h3>Dibujo y diseño</h3><ul class="etiquetas"><li>Dibujo artístico</li><li>Dibujo técnico</li><li>Composición y color</li></ul></div>
+        <div><h3>Herramientas</h3><ul class="etiquetas"><li>Git y GitHub</li><li>Lighthouse</li><li>DevTools</li></ul></div>
+      </div>
+    </section>
+
+    <section id="formacion" class="seccion" aria-labelledby="form-titulo">
+      <h2 id="form-titulo"><span class="num">04</span> Formación</h2>
+      <ol class="linea-tiempo">
+        <li><h3>Curso de desarrollo web FullStack</h3><p class="fecha">2026 — Actualidad</p><p>Manual de Programación Junior, Capítulo 1: fundamentos del Web FullStack.</p></li>
+        <li><h3>Computación — CECyT 3, IPN</h3><p class="fecha">Actualidad</p><p>Formación técnica en computación.</p></li>
+        <li><h3>Meta: Arquitectura — ESIA Tecamachalco, IPN</h3><p class="fecha">Próximo paso</p><p>Quiero estudiar Arquitectura para diseñar espacios.</p></li>
+      </ol>
+    </section>
+
+    <section id="contacto" class="seccion" aria-labelledby="cont-titulo">
+      <h2 id="cont-titulo"><span class="num">05</span> Contacto</h2>
+      <form id="form-contacto" class="formulario" novalidate>
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" required aria-describedby="error-nombre">
+          <p class="error" id="error-nombre" role="alert"></p>
+        </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" autocomplete="email" required aria-describedby="error-correo">
+          <p class="error" id="error-correo" role="alert"></p>
+        </div>
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required aria-describedby="error-mensaje"></textarea>
+          <p class="error" id="error-mensaje" role="alert"></p>
+        </div>
+        <button type="submit" class="btn btn--primario">Enviar mensaje</button>
+        <p id="estado-form" class="estado" role="status" aria-live="polite"></p>
+      </form>
+      <ul class="redes redes--contacto" aria-label="Mis redes profesionales">
+        <li><a href="https://linkedin.com/in/tu-linkedin" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/Odalys09" rel="noopener">GitHub</a></li>
+        <li><a href="mailto:rendon.pelaez.odalys@gmail.com">rendon.pelaez.odalys@gmail.com</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>&copy; 2026 Odalys Rendón Peláez. Hecho con HTML5, CSS3 y JavaScript.</p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
